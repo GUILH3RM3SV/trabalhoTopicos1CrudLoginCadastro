@@ -1,0 +1,22 @@
+body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #009ce1;
+}
+
+.div-externa-form {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.div-interna-form {
+	border: 2px solid #007fb7;
+	border-radius: 8px;
+	
+	background-color: #006fa0; 
+}
