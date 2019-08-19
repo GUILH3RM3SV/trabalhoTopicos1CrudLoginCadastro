@@ -10,20 +10,27 @@
 <h:body>
 	<div class="div-master">
 		<div class="div-externa-form">
-			<div class="div-interna-form" style="width: 200px; padding: 10px; margin: 100px 0px 0px 0px;">
-					<h:form>
+			<div class="div-interna-form">
+
+				<h:form>
+
+					<center>
 						<h:panelGrid>
-							<h:commandButton
+							<h:commandButton class="botaoLogin"
 								action="#{menuLoginCadastoController.redirectLogin()}"
 								value="Login" />
-							<h:commandButton
+
+							<h:commandButton class="botaoPessoa"
 								action="#{menuLoginCadastoController.redirectCadastroPessoa()}"
 								value="Cadastro de pessoas" />
-							<h:commandButton
+
+							<h:commandButton class="botaoProduto"
 								action="#{menuLoginCadastoController.redirectCadastroProdutos()}"
 								value="Cadastro de produtos" />
 						</h:panelGrid>
+					</center>
 				</h:form>
+
 			</div>
 		</div>
 	</div>

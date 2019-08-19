@@ -3,6 +3,7 @@ body {
 	margin: 0;
 	width: 100%;
 	height: 100%;
+	background-image: linear-gradient(to right, red, blue);
 }
 
 .div-externa-form {
@@ -14,9 +15,37 @@ body {
 }
 
 .div-interna-form {	
+	box-shadow: black 7px 7px 20px;
+	
 	border: 1px black solid;
 	border-radius: 5px;
 	
 	padding: 10px;
 	margin: 100px 0px 0px 0px;
+}
+
+.caixas-de-texto {
+	width: 300px;
+	height: 20px;
+	border: none;
+	border-radius: 5px; 
+	box-shadow: 7px 7px 20px black;	
+}
+
+.botao-entrar {
+	border: none; 
+	border-radius: 5px; 
+	width: 155px; 
+	height: 25px; 
+	background-image: linear-gradient(to right, green, #080808); 
+	color: white;
+	box-shadow: 7px 7px 20px black;
+}.botao-entrar:hover {
+		background-image: linear-gradient(to right, #080808, green); 
+}
+
+.palavra {
+	color: white;
+	font-family: Helvetica, Arial, sans-serif; 
+	font-size: 12px;
 }

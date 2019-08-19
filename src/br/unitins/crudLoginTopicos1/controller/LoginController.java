@@ -14,9 +14,12 @@ public class LoginController {
 		return "menuLoginCadastro.xhtml?faces-redirect=true";
 	}
 	
-	public void logar() {
-		System.out.println("nome: " + getLoginModel().getNome());
-		System.out.println("senha: " + getLoginModel().getSenha());
+	public String logar() {
+		if (getLoginModel().getNome().equals("teste") && getLoginModel().getSenha().equals("123")) {
+			return "menuLoginCadastro.xhtml?faces-redirect=true";
+		}
+		application.Util.addMessageError("Login ou senha incorreto");
+		return null;
 	}
 	
 	//Metodos GETTERS e SETTERS

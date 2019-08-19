@@ -3,7 +3,7 @@ body {
 	margin: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #009ce1;
+	background-image: linear-gradient(to right, red, blue);
 }
 
 .div-externa-form {
@@ -15,8 +15,87 @@ body {
 }
 
 .div-interna-form {
-	border: 2px solid #007fb7;
-	border-radius: 8px;
+	box-shadow: black 7px 7px 20px;
 	
-	background-color: #006fa0; 
+	border: 1px black solid;
+	border-radius: 5px;
+	
+	padding: 10px;
+	margin: 100px 0px 0px 0px;
+	
+}
+
+.palavras {
+	color: white;
+	font-family: Helvetica, Arial, sans-serif; 
+	font-size: 12px;
+}
+
+.caixas-de-texto {
+	width: 280px;
+	height: 20px;
+	border: none;
+	border-radius: 5px; 
+	box-shadow: 7px 7px 20px black;	
+}
+
+.botao-incluir {
+	border: none; 
+	border-radius: 5px;
+	height: 25px; 
+	background-image: linear-gradient(to right, blue, #080808); 
+	color: white;
+	box-shadow: 7px 7px 20px black;
+}
+.botao-incluir:hover {
+	background-image: linear-gradient(to right, #080808, blue);
+}
+
+
+.botao-alterar {
+	border: none; 
+	border-radius: 5px;
+	height: 25px;
+	width: 60px;
+	background-image: linear-gradient(to right, green, #080808); 
+	color: white;
+	box-shadow: 7px 7px 20px black;
+}.botao-alterar:hover {
+		background-image: linear-gradient(to right, #080808, green);
+}
+
+.botao-excluir {
+	border: none; 
+	border-radius: 5px;
+	height: 25px;
+	width: 60px; 
+	background-image: linear-gradient(to right, red, #080808); 
+	color: white;
+	box-shadow: 7px 7px 20px black;
+}.botao-excluir:hover {
+		background-image: linear-gradient(to right, #080808, red);
+}
+
+.botao-limpar {
+	border: none; 
+	border-radius: 5px;
+	height: 25px;
+	width: 60px; 
+	background-image: linear-gradient(to right, white, #080808); 
+	color: white;
+	box-shadow: 7px 7px 20px black;
+}.botao-limpar:hover {
+		background-image: linear-gradient(to right, #080808, white);
+}
+
+.botao-voltar {
+	border: none; 
+	border-radius: 5px;
+	width: 60px; 
+	height: 25px; 
+	background-image: linear-gradient(to right, orange, #080808); 
+	color: white;
+	box-shadow: 7px 7px 20px black;
+}.botao-voltar:hover {
+	background-image: linear-gradient(to right, #080808, orange);
 }

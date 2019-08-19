@@ -12,26 +12,23 @@
 		<div class="div-interna-form">
 			<h:form>
 				<h:panelGrid>
-					<h:outputLabel value="Nome: "
-						style="color: #00000; font-family: Helvetica, Arial, sans-serif; font-size: 12px" />
-					<h:inputText value="#{loginController.loginModel.nome}" />
+					<h:outputLabel value="Nome: " class="palavra" />
+					<h:inputText class="caixas-de-texto"
+						value="#{loginController.loginModel.nome}" />
 
-					<h:outputLabel value="senha: "
-						style="color: #00000; font-family: Helvetica, Arial, sans-serif; font-size: 12px" />
-					<h:inputSecret value="#{loginController.loginModel.senha}" />
-					
-					<br/>
+					<h:outputLabel value="senha: " class="palavra" />
+					<h:inputSecret class="caixas-de-texto"
+						value="#{loginController.loginModel.senha}" />
 					
 				</h:panelGrid>
-				<center>
-					<h:panelGrid columns="2">
-						<h:commandButton value="entrar"
-							actionListener="#{loginController.logar()}" 
-							style="border: none; width: 100px; height: 20px; background-color: green;" />
+					<h:messages
+						style="color: red; list-style-type: none; font-size: 14px; font-family: Helvetica, Arial, sans-serif;" />
 
-						<h:commandButton value="voltar"
-							action="#{loginController.redirectMenuLoginCadastro()}"
-							style="border: none; width: 60px; height: 20px; background-color: red;" />
+				<center>
+					<h:panelGrid columns="2"  style="margin: 20px 0px 0px 0px;">
+						<h:commandButton value="entrar" class="botao-entrar"
+							action="#{loginController.logar()}" />
+							
 					</h:panelGrid>
 				</center>
 			</h:form>

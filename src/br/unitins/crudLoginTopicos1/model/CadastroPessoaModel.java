@@ -4,7 +4,7 @@ public class CadastroPessoaModel {
 	private String nome;
 	private String login;
 	private String senha;
-	private Boolean ativo = Boolean.FALSE;
+	private boolean ativo;
 	
 	//Metodos GETTERS e SETTERS
 	public String getNome() {
@@ -25,12 +25,10 @@ public class CadastroPessoaModel {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-	public Boolean getAtivo() {
+	public boolean getAtivo() {
 		return ativo;
 	}
-	public void setAtivo(Boolean ativo) {
+	public void setAtivo(boolean ativo) {
 		this.ativo = ativo;
 	}
-	
-	
 }

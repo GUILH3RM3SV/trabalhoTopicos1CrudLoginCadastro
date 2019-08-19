@@ -4,33 +4,45 @@
 	xmlns:h="http://xmlns.jcp.org/jsf/html">
 
 <h:head>
-	<title>Login</title>
+	<title>Cadastra Pessoas</title>
 	<h:outputStylesheet library="css" name="cadastroPessoaStyle.css" />
 </h:head>
 <h:body>
 	<div class="div-externa-form">
 		<div class="div-interna-form">
 			<h:form>
-				<h:panelGrid columns="2">
-					<h:outputText value="Nome: " />
-					<h:inputText  />
+				<h:panelGrid>
+
+					<h:outputText value="Nome: " class="palavras" />
+					<h:inputText class="caixas-de-texto" 
+						value="#{cadastroPessoaController.cadastroPessoaModel.nome}" />
+
+					<h:outputText value="Login: " class="palavras" />
+					<h:inputText class="caixas-de-texto" 
+						value="#{cadastroPessoaController.cadastroPessoaModel.login}" />
+
+					<h:outputText value="senha: " class="palavras" />
+					<h:inputSecret class="caixas-de-texto" 
+						value="#{cadastroPessoaController.cadastroPessoaModel.senha}" />
+
+				</h:panelGrid>
+				<h:outputText value="Ativo: " class="palavras" />
+				<h:selectBooleanCheckbox style="margin: 15px;"
+					value="#{cadastroPessoaController.cadastroPessoaModel.ativo}" />
+
+				<h:messages style="color: red;" />
+
+				<h:panelGrid columns="5">
 					
-					<h:outputText value="Login: " />
-					<h:inputText />
-					
-					<h:outputText value="senha: " />
-					<h:inputText />
-					
-					<h:outputText value="Ativo: " />
-					<h:selectBooleanCheckbox />
-					
-					<h:panelGrid columns="5">
-					<h:commandButton value="Incluir" />
-					<h:commandButton value="Alterar" />
-					<h:commandButton value="Excluir" />
-					<h:commandButton value="Limpar" />
-					<h:commandButton value="Voltar" action="#{cadastroPessoaController.redirectMenuLoginCadastro()}" />
-					</h:panelGrid>
+					<h:commandButton value="Incluir" class="botao-incluir"
+						actionListener="#{cadastroPessoaController.incluirDados()}" />
+					<h:commandButton value="Alterar" class="botao-alterar" />
+					<h:commandButton value="Excluir" class="botao-excluir" />
+					<h:commandButton value="Limpar" class="botao-limpar"
+						actionListener="#{cadastroPessoaController.limparDados()}" />
+					<h:commandButton value="Voltar" class="botao-voltar"
+						action="#{cadastroPessoaController.redirectMenuLoginCadastro()}" />
+
 				</h:panelGrid>
 			</h:form>
 		</div>
